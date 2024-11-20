@@ -1,0 +1,16 @@
+@import '../../../styles/sass/variables';
+
+.Typography {
+	font-size: 1.6rem;
+	font-style: normal;
+	&--Link {
+		color: #ff6b6b;
+		text-decoration: underline;
+		font-weight: 500;
+		line-height: 2rem;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

@@ -1,0 +1,55 @@
+@import '../../../styles/sass/variables';
+@import '../../../styles/sass/responsive';
+
+.Header {
+	// width: 100%;
+	width: calc(100% - 20%);
+	padding: 16px 24px;
+	display: flex;
+	background: #fff;
+	justify-content: end;
+	align-items: center;
+	gap: 2rem;
+	position: fixed;
+	top: 0;
+	z-index: $zIndex-header;
+	// border-bottom: 1px solid #cac9c900;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	// @include md {
+	// 	display: none;
+	// }
+	// @include sm {
+	// 	display: none;
+	// }
+	&--Left {
+		width: 100%;
+	}
+
+	&--Right {
+		display: flex;
+	}
+	&--Greeting {
+		color: #163877;
+		font-family: Lato;
+		font-size: 2.4rem;
+		font-style: normal;
+		font-weight: 800;
+		line-height: normal;
+	}
+	&--Date {
+		color: #163877;
+		font-family: Lato;
+		font-size: 1.2rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		@include md {
+			display: none;
+		}
+		@include sm {
+			display: none;
+		}
+	}
+}

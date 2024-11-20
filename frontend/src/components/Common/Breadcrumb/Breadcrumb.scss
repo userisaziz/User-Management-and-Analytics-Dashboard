@@ -1,0 +1,35 @@
+@import '../../../styles/sass/variables';
+
+.Breadcrumb {
+	padding: 0 0.8rem 0.8rem 0.8rem;
+	list-style: none;
+
+	&--Breadcrumb-item {
+		display: inline-block;
+		color: #858585;
+		font-family: Lato;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	&--Breadcrumb-item + &--Breadcrumb-item::before {
+		content: '/';
+		padding: 0 0.4rem;
+	}
+
+	&--Breadcrumb-item + &--Breadcrumb-item::before {
+		content: '/';
+		padding: 0 0.4rem;
+	}
+
+	&--Breadcrumb-item.active {
+		color: #323232;
+		font-family: Lato;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+}

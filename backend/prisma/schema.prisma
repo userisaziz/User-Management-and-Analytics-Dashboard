@@ -1,0 +1,70 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  userId    Int      @id @default(autoincrement())
+  username  String   @unique
+  password  String
+  role      Role
+  lastLogin DateTime?
+  status    String   @default("active")
+  activityLogs ActivityLog[]
+  documents   DocumentUpdate[]
+  reports     Report[]
+  sessions    Session[]
+}
+
+model ActivityLog {
+  activityId Int      @id @default(autoincrement())
+  user       User     @relation(fields: [userId], references: [userId])
+  userId     Int
+  action     String
+  timestamp  DateTime
+  details    String
+}
+
+model DocumentUpdate {
+  documentId Int      @id @default(autoincrement())
+  title      String
+  updatedBy  User     @relation(fields: [updatedById], references: [userId])
+  updatedById Int
+  lastUpdated DateTime
+  status     String
+}
+
+model Report {
+  reportId   Int      @id @default(autoincrement())
+  category   String
+  viewedBy   User?    @relation(fields: [viewedById], references: [userId])
+  viewedById Int?
+  date       DateTime
+}
+
+model Session {
+  sessionId  Int      @id @default(autoincrement())
+  user       User     @relation(fields: [userId], references: [userId])
+  userId     Int
+  duration   Int
+}
+
+model SED1Insight {
+  insightId          Int      @id @default(autoincrement())
+  complianceRate     Float
+  averageResponseTime Float
+  flagged            Boolean
+  date               DateTime
+  category           String
+}
+
+enum Role {
+  Admin
+  Updater
+  Viewer
+  SED1
+}

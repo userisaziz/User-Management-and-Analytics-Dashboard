@@ -1,0 +1,66 @@
+@import '../../../styles//sass/variables';
+@import '../../../styles//sass/responsive';
+.DashboardCard {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	border-radius: 8px;
+	background: #d5e3ff;
+	padding: 20px;
+	// border-radius: 11px;
+	border: 0.5px;
+	box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.04);
+	@include md {
+		background: #d5e3ff;
+		box-shadow: 0px 3.979px 11.938px 0px rgba(0, 0, 0, 0.04);
+	}
+	&--Left {
+		// width: 4.8rem;
+		// height: 4.8rem;
+		padding: 1rem;
+		border-radius: 50%;
+		background: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include md {
+			padding: 1rem;
+		}
+	}
+	&--Right {
+		display: flex;
+		flex-direction: column;
+	}
+	&--Heading {
+		color: var(--Dark-BLue, #163877);
+		font-family: Lato;
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		@include md {
+			font-size: 1.6rem;
+		}
+	}
+	&--SubHeading {
+		color: var(--Dark-BLue, #163877);
+		font-family: Lato;
+		font-size: 1.4rem;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+
+		white-space: nowrap;
+		@include md {
+			font-size: 1.2rem;
+		}
+	}
+	&--Skeleton {
+		// padding: 20px;
+		background-color: #dbdbdb;
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+}

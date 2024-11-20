@@ -1,0 +1,29 @@
+@import '../../../styles/sass/variables';
+
+.Profiles {
+	&--ProfileDetails {
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+	}
+
+	&--Name {
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+	&--Role {
+		font-size: 1.2rem;
+		font-weight: 400;
+		color: $color-grey-550;
+	}
+
+	&--ProfileIconContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 4rem;
+		width: 4rem;
+		border-radius: 50%;
+		background-color: $color-dark-red-100;
+	}
+}

@@ -1,0 +1,38 @@
+@import '../../../styles/sass/variables';
+
+.Toggle {
+	width: 4.8rem;
+	height: 2.4rem;
+	background-color: $color-dark-red-400;
+	border-radius: 20px;
+	position: relative;
+	cursor: pointer;
+	transition: background-color 0.3s;
+
+	&--Knob {
+		width: 1.8rem;
+		height: 1.8rem;
+		background-color: $color-white-100;
+		border-radius: 50%;
+		position: absolute;
+		top: 14%;
+		transition: transform 0.3s;
+		transform: translateX(3px);
+	}
+
+	&.on &--Knob {
+		transform: translateX(25px);
+	}
+
+	&.off {
+		background-color: $color-white-100;
+		border: 1px solid $color-grey-500;
+	}
+	&.off &--Knob {
+		transform: translateX(3px);
+		top: 11%;
+		background-color: $color-grey-500;
+		width: 1.7rem;
+		height: 1.7rem;
+	}
+}

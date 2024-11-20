@@ -1,0 +1,145 @@
+@import '../../../styles/sass/variables';
+
+.Button {
+	color: #fff;
+	font-family: Lato;
+	font-size: 1.2rem;
+	font-weight: 400;
+	outline: none;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+	user-select: none;
+	border-radius: 9rem;
+	padding: 13px 21px;
+	height: 44px;
+	border-radius: 29px;
+	background: $color-primary-shade;
+	/*-----------disabled state-------------*/
+
+	&--DisabledPrimary {
+		color: $color-grey-600 !important;
+		background-color: #d5e3ff !important;
+		border: none !important;
+	}
+	&--DisabledSecondary {
+		color: $color-grey-600 !important;
+		background-color: $color-grey-200 !important;
+		border: none !important;
+	}
+
+	&--DisabledLink {
+		color: $color-grey-600 !important;
+	}
+
+	/*-----------loading state-------------*/
+
+	&--Loader {
+		width: 50px;
+		height: 50px;
+
+		position: absolute;
+		svg {
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+	}
+
+	/*-----------with icon-------------*/
+
+	&--Icon {
+		// width: 24px;
+		// height: 24px;
+		display: flex;
+		align-items: center;
+		padding-left: 10px;
+
+		svg,
+		img {
+			width: 16px;
+			height: 16px;
+		}
+	}
+
+	&--Suffix {
+		width: 24px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+
+		svg,
+		img {
+			width: 14px;
+			height: 14px;
+		}
+	}
+
+	/*--------- variants ---------*/
+
+	&--Primary {
+		background: $color-primary-shade;
+		color: $color-white-100;
+	}
+	&--Info {
+		color: $color-primary-shade;
+		background-color: #cddfff;
+	}
+	&--Light {
+		color: $color-primary-shade;
+		background-color: #f6f8fa;
+	}
+	&--Transparent {
+		color: $color-primary-shade;
+		background: $color-white-100;
+	}
+	&--Success {
+		color: #159340 !important;
+		border: 1px solid #159340 !important;
+		background: #15934026 !important;
+	}
+	&--Danger {
+		color: #961540;
+		border: 1px solid #961540 !important;
+		background: rgba(150, 21, 64, 0.16);
+	}
+
+	&--Warning {
+		color: #b92c00;
+		border: 1px solid #b92c00 !important;
+		background: #f2dfd4;
+	}
+	&--Secondary {
+		border: 1px solid $color-grey-400;
+		color: $color-grey-600;
+		background-color: $color-white-100;
+		padding: 13px 21px;
+	}
+	&--Link {
+		min-width: fit-content;
+		padding: 0;
+		height: max-content;
+		background-color: inherit;
+		color: var(--Dark-BLue, #163877);
+		font-family: Lato;
+		// font-size: 10px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		text-decoration-line: underline;
+	}
+	&--OnlyIcon {
+		display: flex;
+		width: 3.6rem;
+		height: 3.6rem;
+		padding: 0.9rem 1.6rem;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+
+		border-radius: 29px;
+		background: #163877;
+	}
+}

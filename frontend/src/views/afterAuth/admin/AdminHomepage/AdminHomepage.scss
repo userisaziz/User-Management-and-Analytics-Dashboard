@@ -1,0 +1,11 @@
+@import '../../../../styles/sass/responsive';
+.AdminHomepage {
+	&--CardContainer {
+		display: flex;
+		gap: 16px;
+		@include md {
+			display: grid;
+			grid-template-columns: 1fr;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+.single-bar-chart {
+	width: 100%;
+	height: 40px; // Adjust height as needed
+	background-color: #f0f0f0; // Background color of the bar container
+	border-radius: 5px; // Optional: Add rounded corners
+
+	.bar {
+		height: 100%;
+		border-radius: 5px; // Optional: Add rounded corners
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		transition: width 0.5s ease-in-out; // Optional: Add animation
+	}
+
+	.label {
+		margin-right: 5px; // Optional: Adjust spacing between label and bar
+		color: white; // Color of the label
+		font-weight: bold; // Optional: Adjust font weight
+		padding: 5px; // Optional: Add padding to the label
+	}
+}

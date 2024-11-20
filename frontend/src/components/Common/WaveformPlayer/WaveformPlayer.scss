@@ -1,0 +1,57 @@
+.WaveformPlayer {
+	gap: 12px;
+	justify-content: center;
+	align-items: center;
+	&--Play {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50px;
+		height: 50px;
+		padding: 10px;
+
+		border-radius: 50%;
+		background: var(--Dark-BLue, #163877);
+	}
+	&--Time {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50px;
+		height: 24px;
+		// border-radius: 0px 500px 500px 104px;
+		border-radius: 500px;
+		background: var(--Royal-Blue, #000a1c);
+		color: #fff;
+		font-family: Lato;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 130.5%; /* 15.66px */
+	}
+	&--Controls {
+		display: flex;
+		padding: 20px 0;
+		justify-content: center;
+		align-items: center;
+		gap: 24px;
+	}
+	&--Skip {
+		background: transparent;
+		border: none;
+		transition: all 0.3s ease;
+		cursor: pointer;
+		width: 48px;
+		height: 48px;
+		transition:
+			width 0.3s ease,
+			height 0.3s ease;
+		&:active {
+		}
+	}
+	&--ControlsBelow{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+}

@@ -1,0 +1,67 @@
+@import '../../../styles/sass/variables';
+@import '../../../styles/sass/responsive';
+
+.Modal {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	// left: 5%;
+	bottom: 0;
+	right: 0;
+	display: grid;
+	place-items: center;
+	z-index: 10000000;
+	&--Backdrop {
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: rgba($color: #000000, $alpha: 0.5);
+	}
+
+	&--Content {
+		max-width: 590px;
+		width: 590px;
+		// min-height: 200px;
+		background: $color-white-100;
+		position: relative;
+		border-radius: 2.4rem;
+		border-radius: 1.6rem;
+		padding: 3.2rem 2.4rem;
+		box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+		@include md {
+			max-width: 29rem;
+			width: 29rem;
+		}
+		hr {
+			border: 0.5px solid $color-grey-100;
+		}
+	}
+
+	&--Title {
+		font-size: 2.4rem;
+		font-weight: 600;
+		line-height: 2.7rem;
+		color: $color-primary;
+		text-align: center;
+		padding: 10px 0px 24px 0px;
+		text-wrap: wrap;
+	}
+
+	&--Body {
+		width: 100%;
+		// padding: 1.6rem 2.6rem;
+	}
+	&--CloseIcon {
+		position: absolute;
+		top: 0.8rem;
+		right: 1.6rem;
+		cursor: pointer;
+		color: $color-primary; // Adjust the color as needed
+		font-size: 2rem;
+	}
+}

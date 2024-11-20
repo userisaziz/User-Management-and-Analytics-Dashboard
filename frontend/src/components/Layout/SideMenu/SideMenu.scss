@@ -1,0 +1,134 @@
+@import '../../../styles/sass/variables';
+@import '../../../styles/sass/mixins';
+@import '../../../styles/sass/responsive';
+
+.SideMenu {
+	padding: 1.6rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+	background-color: $color-main;
+	z-index: 99999999;
+	// border-right: 1px solid $color-grey-900;
+	overflow-y: auto;
+	// @include disableScroll;
+	&--Header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&--Bottom {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+		width: 100%;
+	}
+	&--Body {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 5px;
+	}
+	&--Icon {
+		width: 100%;
+		height: 100%;
+		flex-shrink: 0;
+		align-self: stretch;
+	}
+	&--Logo {
+		width: 100%;
+		height: 15rem;
+		padding: 16px;
+		object-fit: contain;
+		// @include sm {
+		// 	// display: none;
+		// }
+		// @include md {
+		// 	// display: none;
+		// }
+	}
+
+	&--Item {
+		width: 100%;
+		padding: 18px 24px;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		user-select: none;
+
+		color: $white;
+		// @include sm {
+		// 	display: flex;
+		// 	justify-content: center;
+		// 	align-items: center;
+		// }
+		// @include md {
+		// 	display: flex;
+		// 	justify-content: center;
+		// 	align-items: center;
+		// }
+		&:hover {
+			border-radius: 0.8rem;
+			background-color: $color-grey-700;
+		}
+	}
+
+	&--Inactive {
+		width: 100%;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&--Active {
+		width: 100%;
+		border-radius: 0.8rem;
+		background-color: $color-grey-900;
+		h1 {
+			color: #fff;
+			font-family: Lato;
+			font-size: 1.6rem;
+			font-weight: 500;
+			letter-spacing: 0.32px;
+		}
+
+		svg {
+			color: $color-grey-100;
+		}
+
+		&:hover {
+			cursor: default;
+		}
+	}
+
+	&--ItemText {
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 2.2rem;
+		// @include sm {
+		// 	display: none;
+		// }
+		// @include md {
+		// 	display: none;
+		// }
+	}
+
+	&--Logout {
+		width: 100%;
+		background-color: $color-main;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	&--Image {
+		width: 6rem;
+		height: 5rem;
+		object-fit: contain;
+		text-align: center;
+	}
+}

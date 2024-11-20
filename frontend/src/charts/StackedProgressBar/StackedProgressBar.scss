@@ -1,0 +1,43 @@
+//
+.StackedProgressBar {
+	&--Legend {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.stacked-progress {
+	background-color: #e9ecef;
+	line-height: 1rem;
+	max-height: 1rem;
+	font-size: 0.75rem;
+	border: 1px solid #ccc;
+	display: flex;
+	overflow: hidden;
+	text-align: center;
+	border-radius: 1rem;
+
+	.progress-bar {
+		border: none;
+		display: block;
+		height: 1rem;
+		line-height: 1rem;
+		color: #fff;
+		transition: width 0.6s ease;
+
+		&.is-light {
+			background-color: hsl(0, 0%, 96%);
+			color: rgba(0, 0, 0, 0.7);
+		}
+		&.is-success {
+			background-color: hsl(141, 71%, 48%);
+		}
+		&.is-warning {
+			background-color: hsl(48, 100%, 67%);
+			color: rgba(0, 0, 0, 0.7);
+		}
+		&.is-danger {
+			background-color: hsl(348, 100%, 61%);
+		}
+	}
+}

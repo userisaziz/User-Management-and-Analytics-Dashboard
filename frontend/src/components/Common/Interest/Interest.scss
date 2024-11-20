@@ -1,0 +1,14 @@
+@import '../../../styles/sass/variables';
+.Interest {
+	&--Container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.5rem;
+	}
+	&--Chip {
+		border: none;
+		background-color: $color-grey-200;
+		color: $color-grey-700;
+		font-weight: 700;
+	}
+}

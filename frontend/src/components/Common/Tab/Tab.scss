@@ -1,0 +1,32 @@
+@import '../../../styles/sass/variables';
+
+.Tab {
+	border-bottom: 1px solid rgba(202, 201, 201, 0.3);
+	display: flex;
+
+	gap: 2rem;
+	margin-bottom: 1rem;
+	&--TabName {
+		padding-bottom: 1.5rem;
+		cursor: pointer;
+		background: inherit;
+		border: 0;
+		outline: 0;
+		color: #323232;
+		font-family: Lato;
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		padding: 0 16px 16px 16px;
+	}
+	&--Active {
+		border-bottom: 3px solid #163877;
+		color: #163877;
+		font-family: Lato;
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 800;
+		line-height: normal;
+	}
+}

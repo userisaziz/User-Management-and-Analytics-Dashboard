@@ -1,0 +1,65 @@
+.TranscriptMsgBox {
+	&--Box {
+		display: flex;
+		gap: 20px;
+
+		padding: 12px 20px;
+		border-radius: 8px;
+
+		&.red {
+			background: rgba(150, 21, 64, 0.16);
+			&--Time {
+				color: #961540;
+			}
+			&--Description {
+				color: #313131;
+			}
+		}
+
+		&.orange {
+			background: #f2dfd4;
+			&--Time {
+				color: #b92c00;
+			}
+			&--Description {
+				color: #313131;
+			}
+		}
+
+		&.blue {
+			background: #dde8ff;
+			&--Time {
+				color: #5e5e5e;
+			}
+			&--Description {
+				color: #313131;
+			}
+		}
+		&.green {
+			background: #d4f2df;
+			&--Time {
+				color: #007b3a;
+			}
+			&--Description {
+				color: #313131;
+			}
+		}
+	}
+
+	&--Time {
+		font-family: Lato;
+		font-size: 1.4rem;
+		font-weight: normal;
+		align-self: stretch;
+	}
+
+	&--Description {
+		font-family: Lato;
+		font-size: 14px;
+		font-weight: 500;
+	}
+	&--Titles {
+		font-weight: bold;
+		font-size: 14px;
+	}
+}

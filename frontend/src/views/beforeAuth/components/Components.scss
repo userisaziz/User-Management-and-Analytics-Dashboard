@@ -1,0 +1,43 @@
+@import '../../../styles/sass/variables';
+
+.Components {
+	&--Box {
+		width: 40%;
+	}
+	&--OTP-Box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.GenericTable {
+	width: 70%;
+	height: 520px;
+	margin: 0 auto;
+}
+
+.Line {
+	width: 50%;
+	height: 300px;
+}
+
+.Doughnut {
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 4.8rem;
+}
+.TestChip {
+	padding: 3rem 7rem;
+	height: 5.6rem;
+	background-color: $color-green-100;
+	color: $color-green-800;
+}
+
+.DownloadSelect {
+	width: 25rem;
+}

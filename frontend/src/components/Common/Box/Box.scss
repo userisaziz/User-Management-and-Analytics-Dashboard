@@ -1,0 +1,9 @@
+@import '../../../styles/sass/variables';
+
+.Box {
+	padding: 2.4rem 3.2rem;
+	margin: 1rem;
+	background-color: $color-white-100;
+	border-radius: 0.8rem;
+	box-shadow: 0rem 0.6rem 1.2rem 0rem rgba(200, 200, 200, 0.08);
+}

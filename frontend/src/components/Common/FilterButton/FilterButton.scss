@@ -1,0 +1,21 @@
+@import '../../../styles/sass/variables';
+
+.FilterButton {
+	display: flex;
+	height: 44px;
+	padding: 14px 16px;
+	justify-content: center;
+	min-width: 180px;
+	align-items: center;
+	gap: 8px;
+	border-radius: 100px;
+	border: 0.5px solid #8e8e8e;
+	color: #323232;
+	background: #fff;
+	&--Active {
+		color: #fff;
+		border-radius: 100px;
+		background: #cca479;
+		border: none;
+	}
+}

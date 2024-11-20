@@ -1,0 +1,19 @@
+.ValueBadge {
+	display: flex;
+	padding: 14px 16px;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	border-radius: 8px;
+	border: 0.5px solid #ececec;
+	background: #f6f6f6;
+
+	&--Text {
+		color: #8c8c8c;
+		font-family: Lato;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+}

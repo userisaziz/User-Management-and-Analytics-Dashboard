@@ -1,0 +1,57 @@
+.ReactDropdown {
+	border-radius: 8px;
+	background: #fff;
+	color: var(--Black, #323232);
+	text-align: center;
+	font-family: Lato;
+	font-size: 1.2rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	&--ReactControlClassName {
+		border: none !important;
+		display: flex;
+		padding: 14px 16px;
+		justify-content: center;
+		align-items: center;
+		gap: 16px;
+		align-self: stretch;
+		color: #323232 !important;
+		font-family: Lato;
+		font-size: 1.2rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		border-radius: 8px;
+		background: #fff;
+		box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+	}
+	&--Placeholder {
+		color: var(--Black, #323232);
+		text-align: center;
+		font-family: Lato;
+		font-size: 1.2rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+	&--ReactMenuClassName {
+		border-radius: 8px;
+		background: #fff;
+		box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+		> div {
+			color: var(--Black, #323232);
+			font-family: Lato;
+			font-size: 1.2rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			&:hover {
+				background: #d2d2d2;
+			}
+		}
+	}
+}
+.Dropdown-option.is-selected {
+	background: #d2d2d2;
+}

@@ -1,0 +1,80 @@
+@import '../../styles/sass/variables';
+@import '../../styles/sass/responsive';
+
+.AdminPanel {
+	width: 100%;
+	height: 100vh;
+	&--Header {
+		width: 100%;
+		display: block;
+		@include sm {
+			display: none;
+		}
+		@include md {
+			display: none;
+		}
+	}
+	&--Navbar {
+		display: none;
+		@include sm {
+			display: block;
+		}
+		@include md {
+			display: block;
+		}
+	}
+
+	&--SideMenu {
+		width: 20%;
+		height: 100vh;
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		@include md {
+			display: none;
+		}
+		@include sm {
+			display: none;
+		}
+		// padding-top: 100px;
+	}
+
+	&--Right {
+		width: 80%;
+		height: 90vh;
+		z-index: 1000;
+		margin-left: 20%;
+		@include md {
+			width: 100%;
+			height: 100vh;
+			margin-left: 0;
+		}
+		@include sm {
+			width: 100%;
+			height: 100vh;
+			margin-left: 0;
+		}
+	}
+
+	&--Body {
+		width: 100%;
+		height: auto;
+		// padding: 1rem 0.5rem;
+		padding: 16px 24px;
+		margin-top: 8rem;
+		padding-bottom: 5rem;
+		@include md {
+			margin-top: 2rem;
+			padding: 16px;
+		}
+		@include sm {
+			margin-top: 2rem;
+			padding: 16px;
+		}
+	}
+
+	&--Main {
+		margin: 2rem 0;
+	}
+}

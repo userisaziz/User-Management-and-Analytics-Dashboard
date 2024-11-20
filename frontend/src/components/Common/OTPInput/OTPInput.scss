@@ -1,0 +1,45 @@
+@import '../../../styles/sass/variables';
+
+.OTPInput {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	&--Container {
+		display: flex;
+		gap: 16px;
+	}
+	&--Input {
+		display: flex;
+		flex-direction: row;
+		width: 70px;
+		padding: 16px 20px;
+		border-radius: 8px;
+		border: 1px solid $color-grey-400;
+		background: $color-white-100;
+		text-align: center;
+	}
+	&--Input:focus,
+	&--Input:active {
+		outline: none;
+	}
+	&----ErrorMsgContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	&--ErrorMsg {
+		color: $color-red-700;
+		font-family: Mulish;
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%;
+	}
+	&--CancelIcon {
+		display: flex;
+		flex-direction: row;
+
+		align-items: center;
+	}
+}

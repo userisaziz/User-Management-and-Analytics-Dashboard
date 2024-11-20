@@ -1,0 +1,19 @@
+.StackedLegend {
+	display: flex;
+	// flex-direction: column;
+	// align-items: center;
+
+	gap: 24px;
+	&--Text {
+		color: #323232;
+		font-family: Lato;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+	&--Content {
+		display: flex;
+		gap: 16px;
+	}
+}

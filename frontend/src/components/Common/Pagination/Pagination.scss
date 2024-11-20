@@ -1,0 +1,133 @@
+@import '../../../styles/sass/variables';
+.Pagination {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	flex-direction: row;
+	background-color: #fff;
+
+	&--Actions {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		gap: 3rem;
+		justify-content: space-between;
+	}
+
+	&--TotalPageCount {
+		font-size: 1.6rem;
+		font-weight: 400;
+		line-height: 22px;
+		color: $color-primary;
+		padding: 0 2rem;
+
+		span {
+			font-weight: 600;
+		}
+	}
+	&--PageNavigator {
+		display: flex;
+		gap: 1rem;
+	}
+
+	&--Navigator {
+		width: 30px;
+		height: 30px;
+		background-color: #fff;
+		color: $color-primary;
+		border: 1px solid $color-grey-100;
+		border-radius: 4px;
+		display: grid;
+		place-items: center;
+		font-size: 1.4rem;
+		color: $color-primary;
+		font-weight: 600;
+		.Input {
+			&--InputField {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				border: none;
+				display: block;
+			}
+			&--InputBox {
+				text-align: center;
+				font-size: 1.4rem;
+				font-weight: 600;
+				line-height: 22px;
+				color: $color-primary;
+			}
+		}
+
+		svg {
+			transform: scale(0.4);
+		}
+	}
+
+	&--GoToPage {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		font-size: 1.4rem;
+		font-weight: 600;
+		line-height: 22px;
+		color: $color-primary;
+	}
+
+	&--InputGoToPage {
+		width: 60px;
+	}
+
+	&--ShowCurrentPage {
+		width: auto;
+		min-width: 30px;
+		padding: 0 0.4rem;
+	}
+	&--ButtonPage {
+		display: flex;
+		gap: 1rem;
+		text-decoration: none;
+		list-style-type: none;
+		font-size: 1.4rem;
+		font-weight: 600;
+		line-height: 22px;
+		color: $color-primary;
+	}
+}
+.page-item {
+	padding: 0.2rem 1rem;
+	border-radius: 0.4rem;
+	cursor: pointer;
+	&:hover {
+		background-color: #f0f0f0;
+	}
+}
+.break {
+}
+
+.Pagination .active {
+	background-color: $color-primary-shade;
+	color: $color-white-100;
+}
+// .page-item {
+// 	padding: 0.2rem 1rem;
+// 	border-radius: 0.4rem;
+// 	cursor: pointer;
+// 	display: inline-block; /* Ensures the entire area is clickable */
+// }
+
+// .page-link {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center; /* Ensures the entire link area is clickable */
+// 	padding: 0.5rem 1rem; /* Adjust padding as needed */
+// 	color: inherit; /* Ensures the link color matches the text color */
+// 	text-decoration: none; /* Removes underline */
+// }
+
+// .page-item:hover {
+// 	background-color: #f0f0f0;
+// }

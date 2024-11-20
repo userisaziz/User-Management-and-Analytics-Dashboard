@@ -1,0 +1,11 @@
+@import '../../../styles/sass/responsive';
+
+.Responsive {
+	width: 8rem;
+	height: auto;
+	cursor: pointer;
+	@include sm {
+		width: 30px;
+		height: 30px;
+	}
+}

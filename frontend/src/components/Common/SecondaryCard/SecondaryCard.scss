@@ -1,0 +1,18 @@
+@import '../../../styles//sass/variables';
+@import '../../../styles//sass/responsive';
+.SecondaryCard {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	border-radius: 8px;
+	background: #d5e3ff;
+	padding: 20px;
+	// border-radius: 11px;
+	border: 0.5px;
+	box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.04);
+	@include md {
+		background: #d5e3ff;
+		box-shadow: 0px 3.979px 11.938px 0px rgba(0, 0, 0, 0.04);
+	}
+}

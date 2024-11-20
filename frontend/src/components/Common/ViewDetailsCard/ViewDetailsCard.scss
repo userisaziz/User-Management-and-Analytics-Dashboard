@@ -1,0 +1,32 @@
+@import '../../../styles/sass/variables';
+.ViewDetailsCard {
+	width: 80%;
+	min-height: 200px;
+
+	&--Header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		svg {
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+
+	&--Title {
+		font-size: 2.4rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 27px;
+	}
+
+	&--GridDescription {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-row-gap: 5rem;
+		margin: 2rem 0;
+		grid-column-gap: 2rem;
+	}
+}

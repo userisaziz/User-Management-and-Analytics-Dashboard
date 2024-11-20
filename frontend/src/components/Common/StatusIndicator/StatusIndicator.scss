@@ -1,0 +1,25 @@
+@import '../../../styles/sass/variables';
+
+.StatusIndicator {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+	font-size: 1.4rem;
+	font-weight: 400;
+	padding: 0.4rem 0.8rem;
+	border-radius: 0.4rem;
+	color: $color-white-100;
+
+	&--success {
+		background: $color-green-400;
+	}
+
+	&--rejected {
+		background: $color-dark-red-400;
+	}
+
+	&--pending {
+		background: $color-yellow-400;
+	}
+}

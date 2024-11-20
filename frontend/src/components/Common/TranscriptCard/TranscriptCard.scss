@@ -1,0 +1,43 @@
+.TranscriptCard {
+	display: flex;
+	// flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px;
+	border-bottom: 0.5px solid #d2d2d2;
+	&--Left {
+		display: flex;
+		flex-direction: column;
+	}
+	&--Top {
+		display: flex;
+		margin-right: 8px;
+	}
+	&--Speaker {
+		color: var(--Dark-BLue, #163877);
+		font-family: Lato;
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+	}
+	&--Bottom {
+		display: flex;
+	}
+	&--Words {
+		color: var(--Black, #323232);
+		font-family: Lato;
+		font-size: 1.4rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+	&--Duration {
+		color: #adadad;
+		font-family: Inter;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+}

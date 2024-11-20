@@ -1,0 +1,71 @@
+.DateFilter {
+	display: flex;
+	cursor: pointer;
+	height: 48px;
+	padding: 14px 16px;
+	gap: 8px;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+	&--Content {
+		display: flex;
+		align-items: center;
+
+		gap: 8px;
+		color: #323232;
+		font-family: Lato;
+		font-size: 1.2rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+	&--Modal {
+	}
+	&--ModalContent {
+		width: auto;
+		max-width: auto;
+	}
+	&--ButtonDiv {
+		display: flex;
+		justify-content: space-between;
+	}
+	&--Button {
+		display: flex;
+		padding: 8px 16px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+	&--AllTime {
+		// color: #161718;
+		font-family: Lato;
+		font-size: 1.2rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+	&--ModalContent {
+		display: flex;
+		gap: 16px;
+		flex-direction: column;
+	}
+	&--Title {
+		display: flex;
+		padding: 8px 16px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		align-self: stretch;
+		border-radius: 4px;
+		border: 0.5px solid rgba(89, 136, 221, 0.5);
+		background: rgba(255, 255, 255, 0.2);
+		cursor: pointer;
+	}
+}
+//Calendar Styles
+.rdrCalendarWrapper {
+	width: 100%;
+}
+.rdrMonthAndYearPickers select {
+	padding: 1rem 3rem 1rem 1rem;
+}

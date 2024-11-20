@@ -1,0 +1,105 @@
+@import '../../../styles/sass/variables';
+
+.Questionaire {
+	margin-top: 1rem;
+	&--Header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&--Title {
+		color: $color-black-200;
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 2.2rem;
+	}
+	&--Container {
+		margin-top: 2.5rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		max-height: 60vh;
+		overflow-y: auto;
+	}
+	&--Box {
+		margin-right: 1rem;
+		// width: fit-content;
+		background-color: $color-grey-100;
+		padding: 8px 16px;
+		color: $color-primary;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 22.4px;
+		border-radius: 8px;
+		width: calc(100% - 16px);
+	}
+	&--Question {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		font-size: 1.5rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 2.2rem;
+	}
+	&--Answer {
+		font-size: 1.5rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 2.2rem;
+		transition: 0.3s ease;
+	}
+
+	&--AnswerShow {
+		font-size: 1.5rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 2.2rem;
+		transition: display 0.3 ease;
+	}
+
+	&--AnswerHidden {
+		display: none;
+	}
+
+	&--Line {
+		border-bottom: 1px solid $color-grey-300;
+		padding: 8px 16px;
+		color: $color-primary;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 22.4px;
+	}
+
+	&--NoData {
+		color: $color-black-200;
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 2.2rem;
+		text-align: center;
+		height: 5rem;
+	}
+
+	&--Icon {
+		cursor: pointer;
+	}
+}
+
+.Questionaire ::-webkit-scrollbar {
+	width: 0.8rem;
+	height: 0.7rem;
+}
+
+.Questionaire ::-webkit-scrollbar-track {
+	background-color: $color-white-100;
+	border-radius: 10px;
+}
+
+.Questionaire ::-webkit-scrollbar-thumb {
+	background: $color-grey-600;
+	border-radius: 10px;
+}

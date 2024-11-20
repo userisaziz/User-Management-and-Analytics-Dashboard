@@ -1,0 +1,56 @@
+.TitleCard {
+	&--TitleCardTitleDiv {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		width: 100%;
+		padding: 24px;
+		// // padding: 0 24px;
+		// height: 5.3rem;
+		// height: 53px;
+		border-radius: 8px 8px 0px 0px;
+
+		background: #fff;
+		position: relative;
+		z-index: 0;
+
+		box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.04);
+	}
+	&--Title {
+		display: flex;
+		gap: 10px;
+		color: #323232;
+		font-family: Lato;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: normal;
+	}
+	&--SubTitle {
+		color: #323232;
+		font-family: Lato;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
+
+	&--Content {
+		flex: 1;
+		width: 100%;
+
+		background-color: #fff;
+		border-radius: 0px 0px 8px 8px;
+		// padding: 24px;
+	}
+
+	&--Suffix {
+		height: 50%;
+	}
+}
+.TitleCardDiv {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}

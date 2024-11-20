@@ -1,0 +1,35 @@
+@import '../../styles/sass/responsive';
+
+.LoginLayout {
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	&--Container {
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		align-items: center;
+		background-color: #f6f8fa;
+	}
+	&--Slider {
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #163877;
+	}
+	@include sm {
+		height: 100%;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	@include md {
+		grid-template-columns: 1fr;
+	}
+}

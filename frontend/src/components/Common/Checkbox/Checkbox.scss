@@ -1,0 +1,28 @@
+@import '../../../styles/sass/variables';
+
+.Checkbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+
+	&--Input {
+		height: 2rem;
+		width: 2rem;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&--Label {
+		color: #323232;
+		font-family: Lato;
+		font-size: 1.2rem;
+
+		font-weight: 500;
+		line-height: normal;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

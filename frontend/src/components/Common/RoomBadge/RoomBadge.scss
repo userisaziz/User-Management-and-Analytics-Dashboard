@@ -1,0 +1,17 @@
+.RoomBadge {
+	// width: 50px;
+	height: 30px;
+	flex-shrink: 0;
+	border-radius: 3.861px;
+	background: rgba(252, 163, 17, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&--Title {
+		color: #fff;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+}

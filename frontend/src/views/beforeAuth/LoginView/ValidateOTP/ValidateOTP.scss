@@ -1,0 +1,50 @@
+@import '../../../../styles/sass/variables';
+@import '../../../../styles/sass/mixins';
+.ValidateOTP {
+	&--ButtonContainer {
+		margin-top: 32px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&--LinksContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 24px;
+		gap: 1rem;
+	}
+	&--Button {
+		width: 400px;
+	}
+	&--ForgotLink {
+		color: $color-grey-550;
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%;
+		transition: text-decoration 0.3s ease;
+	}
+
+	&--ForgotLink:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+	&--FormLayout {
+		width: auto;
+		height: auto;
+	}
+	@include media-xl {
+		&--FormLayout {
+			// width: 25%;
+			height: 47%;
+		}
+	}
+
+	@include media-xxl {
+		&--FormLayout {
+			// width: 25%;
+			height: 42%;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+@import '../../../styles//sass/variables';
+
+.Card {
+	padding: 20px;
+	// border-radius: 11px;
+	border: 0.5px;
+	// background-color: $color-grey-150;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.04);
+}

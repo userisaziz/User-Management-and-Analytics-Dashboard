@@ -1,0 +1,67 @@
+@import './variables';
+
+// To disable Scroll bar
+@mixin disableScroll {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	-ms-overflow-style: none;
+	& {
+		scrollbar-width: none;
+	}
+}
+
+// Screen Responsiveness Breakpoints
+@mixin media-xss {
+	@media screen and (min-width: 320px) {
+		@content;
+	}
+}
+
+@mixin media-ss {
+	@media screen and (min-width: 360px) {
+		@content;
+	}
+}
+
+@mixin media-sm {
+	@media screen and (min-width: 395px) {
+		@content;
+	}
+}
+
+@mixin media-sl {
+	@media screen and (min-width: 450px) {
+		@content;
+	}
+}
+
+@mixin media-md {
+	@media screen and (min-width: 812px) {
+		@content;
+	}
+}
+
+@mixin media-ml {
+	@media screen and (min-width: 1112px) {
+		@content;
+	}
+}
+
+@mixin media-l {
+	@media screen and (min-width: 1440px) {
+		@content;
+	}
+}
+
+@mixin media-xl {
+	@media screen and (min-width: 1600px) {
+		@content;
+	}
+}
+
+@mixin media-xxl {
+	@media screen and (min-width: 1920px) {
+		@content;
+	}
+}

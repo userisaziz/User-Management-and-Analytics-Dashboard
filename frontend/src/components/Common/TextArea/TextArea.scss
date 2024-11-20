@@ -1,0 +1,34 @@
+@import '../../../styles/sass/variables';
+.TextArea {
+	width: 100%;
+	&--TextareaInput {
+		font-size: 1.6rem;
+		font-weight: 500;
+		width: 100%;
+		border-radius: 0.8rem;
+		padding: 1.6rem 2rem;
+		border: 0.1rem solid $color-grey-400;
+		resize: none;
+		background-color: $color-white-100;
+		outline: none;
+	}
+	&--Error {
+		border: 1px solid $color-red-800;
+		background-color: $color-white-100;
+		caret-color: $color-red-800;
+		::placeholder {
+			color: $color-red-800;
+		}
+	}
+
+	&--ErrorMessage {
+		font-size: 1.6rem;
+		font-weight: 500;
+		line-height: 2rem;
+		color: $color-red-800;
+	}
+
+	&--Disabled {
+		background-color: $color-grey-200;
+	}
+}

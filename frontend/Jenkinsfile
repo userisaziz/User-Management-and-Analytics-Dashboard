@@ -1,0 +1,58 @@
+pipeline {
+    agent any
+
+    tools {
+        nodejs "node"
+    }
+    environment {
+        baseurl = credentials('baseurl')
+    }
+
+    stages {
+        stage('Clean Workspace') {
+            steps {
+                deleteDir()
+            }
+        }
+        
+        stage('Clone GitHub Repository') {
+            steps {
+                git branch: 'dev', credentialsId: 'gitcreds', url: 'https://github.com/rohantyoyo/yoyoDashboard.git'
+                sh 'chmod -R 777 /var/lib/jenkins/workspace/*'
+            }
+        }
+
+        stage('npm build') {
+            steps {
+                sh 'echo "baseURL=$baseurl" > .env'
+                sh 'npm install --legacy-peer-deps && npm run build'
+            }
+        }
+        
+        stage('Deploy to S3') {
+            steps {
+                withCredentials([aws(accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'aws-keys', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY')]) {
+                    sh 'aws s3 cp build s3://sandboxanalyticdashboard/ --recursive'
+                    sh 'aws cloudfront create-invalidation  --distribution-id E1SS96FNANAKL0 --paths "/*"'
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            emailext (
+                subject: "Pipeline ${JOB_NAME} : ${currentBuild.currentResult}",
+                body: '''<html>
+                           <body>
+                              <p><b>JOB NAME :  ${JOB_NAME}</b></p>
+                              <p><b>BUILD NUMBER : ${BUILD_NUMBER}</b></p>
+                            </body>
+                         </html>''',
+                to: 'abhinav@goyoyo.ai, rohan@goyoyo.ai, aziz@goyoyo.ai',
+                from: 'jenkins@example.com',
+                mimeType:  'text/html'
+            )
+        }
+    }
+}

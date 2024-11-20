@@ -1,0 +1,87 @@
+@import '../../../styles/sass/variables';
+.ProfileDropdown {
+	width: 30rem;
+	height: fit-content;
+	position: absolute;
+	background-color: $color-white-100;
+	margin-top: 6rem;
+	border-radius: 1rem;
+	z-index: 1000;
+	box-shadow: 0px 4px 20px 0px #00000033;
+	padding: 2rem 2rem 2.5rem 2rem;
+	right: 3%;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	&--BackDrop {
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 100;
+	}
+
+	&--UserDetails {
+		display: flex;
+		gap: 1.2rem;
+		border-bottom: 0.5px solid $Grey50;
+		padding: 1rem 0rem;
+	}
+	&--DetailsContainer {
+		display: flex;
+		padding-top: 2rem;
+		gap: 1.2rem;
+		cursor: pointer;
+	}
+	&--changePasswordText {
+		// color: $color-black-700;
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 20px;
+		text-align: center;
+	}
+	&--signOutText {
+		color: $color-red-600;
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 20px;
+		text-align: center;
+	}
+	&--Buttons {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		gap: 4rem;
+		align-self: stretch;
+		margin-top: 4rem;
+
+		.Button {
+			display: flex;
+			width: 16rem;
+			height: 4.8rem;
+			padding: 1.6rem 3.2rem;
+			justify-content: center;
+			align-items: center;
+			gap: 0.8rem;
+			// width: 48%;
+			// height: 48px;
+		}
+	}
+	&--DeleteModalText {
+		// color: $color-grey-700;
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 22px;
+		width: 420px;
+	}
+	&--DeleteButton {
+		// background-color: $color-red-100;
+	}
+}

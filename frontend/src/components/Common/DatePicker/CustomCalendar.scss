@@ -1,0 +1,18 @@
+/* CustomCalendar.css */
+.custom-calendar-container {
+	font-family: 'Lato', sans-serif;
+}
+
+.custom-calendar {
+	width: 300px; /* Adjust width as needed */
+	max-width: 100%; /* Ensure calendar doesn't overflow its container */
+}
+
+.react-calendar__tile--active {
+	background-color: #163877;
+}
+.react-calendar {
+	color: #333333; /* Dark grey text color */
+	font-size: 14px; /* Font size 14px (equivalent to font weight 400) */
+}
+/* Add any additional custom styles here */

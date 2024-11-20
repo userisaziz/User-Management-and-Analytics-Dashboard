@@ -1,0 +1,18 @@
+@import '../../../../../styles/sass/responsive';
+
+.TouchPointChart {
+	&--Horizontal {
+		display: none;
+
+		@include md {
+			display: block;
+		}
+	}
+	&--Vertical {
+		display: block;
+
+		@include md {
+			display: none;
+		}
+	}
+}

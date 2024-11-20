@@ -1,0 +1,41 @@
+@import '../../../styles/sass/variables';
+
+.DateRangePicker {
+	display: flex;
+	justify-content: center;
+	width: 340px;
+	border: 1px solid #f3f3f3;
+	border-radius: 0.8rem;
+	overflow: hidden;
+
+	&--Shadow {
+		box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.16);
+	}
+
+	&--DateRange {
+		.rdrMonthAndYearWrapper {
+			color: #6f6f6f;
+		}
+
+		.rdrNextPrevButton {
+			background: #f2f2f2;
+			width: 2.8rem;
+			height: 2.8rem;
+		}
+
+		.rdrWeekDay {
+			color: #979797;
+		}
+
+		.rdrPprevButton i {
+			border-color: transparent #929292 transparent transparent;
+			scale: 1.4;
+		}
+
+		.rdrNextButton i {
+			border-color: transparent transparent transparent #929292;
+			scale: 1.4;
+			margin: 0 0 0 10px;
+		}
+	}
+}

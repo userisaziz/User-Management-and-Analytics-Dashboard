@@ -1,0 +1,20 @@
+@import '../../../styles/sass/variables';
+
+.RadioButtonContainer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1.6rem;
+
+	&--RadioButton {
+		accent-color: crimson;
+		background: transparent;
+		width: 2.4rem;
+		height: 2.4rem;
+	}
+
+	&--Label {
+		font-size: 1.6rem;
+		font-weight: 400;
+	}
+}

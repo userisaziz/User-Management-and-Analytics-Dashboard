@@ -1,0 +1,66 @@
+@import '../../../styles/sass/variables';
+
+.UploadImage {
+	&--Form {
+		height: fit-content;
+	}
+	&--FileUpload {
+		display: none;
+	}
+	&--BrowserButton {
+		height: 3.5rem;
+		margin-top: 1.5rem;
+		color: $color-dark-red-400;
+		border: 1px solid $color-dark-red-400;
+	}
+	.Button {
+		width: 12rem;
+	}
+	&--BorderDashed {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-width: 2px;
+		border-radius: 1rem;
+		border-style: dashed;
+		border-color: $color-grey-300;
+		background-color: $color-grey-100;
+		flex-direction: column;
+		padding: 7rem;
+	}
+	&--BorderDashedError {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-width: 2px;
+		border-radius: 1rem;
+		border-style: dashed;
+		border-color: $color-red-800;
+		background-color: $color-grey-100;
+		flex-direction: column;
+		padding: 7rem;
+	}
+	&--Heading {
+		font-size: 1.4rem;
+		color: $color-primary;
+		font-weight: 600;
+		margin-bottom: 0.7rem;
+	}
+	&--AcceptedFormate {
+		font-size: 1.2rem;
+		color: $color-grey-650;
+	}
+	&--ErrorText {
+		font-size: 1.8rem;
+		color: $color-red-800;
+		font-weight: 500;
+		line-height: 2rem;
+		margin-top: 2rem;
+	}
+
+	&--Icon {
+		margin-bottom: 1.5rem;
+	}
+}

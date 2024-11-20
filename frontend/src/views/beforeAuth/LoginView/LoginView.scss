@@ -1,0 +1,97 @@
+@import '../../../styles/sass/variables';
+@import '../../../styles/sass/mixins';
+@import '../../../styles/sass/responsive';
+.LoginView {
+	&--GreetingsDiv {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 32px;
+	}
+	&--Greetings {
+		color: var(--Black, #323232);
+		font-family: Lato;
+		font-size: 1.6rem;
+
+		font-weight: 400;
+	}
+	&--LoginText {
+		color: var(--Dark-BLue, #163877);
+		font-family: Lato;
+		font-size: 3.2rem;
+
+		font-weight: 700;
+	}
+	&--CheckboxContainer {
+		display: flex;
+		justify-content: start;
+		margin-top: 24px;
+	}
+	&--LinksContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 3rem;
+		gap: 1rem;
+	}
+	&--Button {
+		margin-top: 32px;
+		width: 100%;
+	}
+	&--ForgotLink {
+		color: $color-grey-550;
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 400;
+		// line-height: 140%;
+		transition: text-decoration 0.3s ease;
+	}
+	&--ResetLink {
+		color: #163877;
+		font-family: Lato;
+
+		font-weight: 700;
+
+		font-size: 1.6rem;
+
+		// line-height: 110%;
+		transition: text-decoration 0.3s ease;
+	}
+
+	&--ForgotLink:hover,
+	&--ResetLink:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+	&--Icon {
+		cursor: pointer;
+	}
+	&--InputBox {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+	&--Input {
+		width: 100%;
+	}
+	@include media-xl {
+		&--FormLayout {
+			width: 25%;
+		}
+	}
+
+	@include media-xxl {
+		&--FormLayout {
+			width: 25%;
+		}
+	}
+	&--ErrorMessage {
+		margin-top: 1rem;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 1.2rem;
+		font-weight: 600;
+		line-height: 2rem;
+		color: $color-red-800;
+	}
+}

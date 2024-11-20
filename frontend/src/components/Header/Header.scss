@@ -1,0 +1,77 @@
+@import '../../styles/sass/responsive';
+.SalesAnalyticsHeader {
+	display: flex;
+	border-radius: 16px;
+	background: #fff;
+	padding: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+    margin-bottom: 16px;
+	@include md {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	&--between {
+		display: flex;
+		align-items: center;
+        justify-content: space-between;
+		gap: 18px;
+        width: 100%;
+		@include md {
+			display: grid;
+			grid-template-columns: 1fr;
+		}
+	}
+}
+
+.person {
+	display: flex;
+	cursor: pointer;
+	height: 48px;
+	padding: 14px 16px;
+	gap: 8px;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+    border: #fff;
+    display: flex;
+    align-items: center;
+}
+
+/* Dropdown styling */
+.SalesAnalyticsHeader__person {
+	position: relative;
+
+	.person-dropdown {
+		position: absolute;
+		top: 100%;
+		right: 0; /* Align dropdown to the right edge */
+		width: 200px; /* Adjust width as needed */
+		background: #fff;
+		border: 1px solid #e0e0e0;
+		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+		border-radius: 8px;
+		margin-top: 8px;
+		z-index: 10;
+		overflow: hidden; /* Ensure overflow is handled */
+
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+
+			li {
+				padding: 12px 16px;
+				cursor: pointer;
+				transition: background 0.2s;
+
+				&:hover {
+					background-color: #f0f0f0;
+				}
+			}
+		}
+	}
+}

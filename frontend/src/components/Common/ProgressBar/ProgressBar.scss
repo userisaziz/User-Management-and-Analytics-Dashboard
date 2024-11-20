@@ -1,0 +1,30 @@
+@import '../../../styles/sass/variables';
+
+.ProgressBar {
+	width: 100%;
+	height: 8px;
+
+	background: $color-secondary-shade;
+	border-radius: 20px;
+	overflow: hidden;
+	outline: none;
+
+	&--Bar {
+		height: 100%;
+		background: #163877;
+		// background-color: $color-dark-red-400;
+		border-radius: inherit;
+	}
+}
+
+.LabelData {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.6rem;
+	margin-bottom: 0.8rem;
+	font-weight: 600;
+
+	&--LabelKey {
+		color: $color-grey-750;
+	}
+}

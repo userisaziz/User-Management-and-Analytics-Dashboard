@@ -1,0 +1,32 @@
+@import '../../../styles/sass/responsive';
+.SalesAnalyticsHeader {
+	display: flex;
+	border-radius: 16px;
+	background: #fff;
+	padding: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	@include md {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	&--HeaderLeft {
+		display: flex;
+		align-items: center;
+		gap: 18px;
+		@include md {
+			display: grid;
+			grid-template-columns: 1fr;
+		}
+	}
+	&--HeaderText {
+		color: #323232;
+		font-family: Lato;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+}

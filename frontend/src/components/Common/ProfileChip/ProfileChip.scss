@@ -1,0 +1,12 @@
+@import '../../../styles/sass/variables';
+
+.Profile {
+	cursor: pointer;
+	width: 16.9rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 0.1rem solid $color-grey-400;
+	padding: 0.4rem 0.8rem 0.4rem 0.4rem;
+	border-radius: 3.2rem;
+}
